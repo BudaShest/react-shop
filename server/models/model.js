@@ -113,7 +113,7 @@ Device.hasMany(BasketDevice)
 BasketDevice.belongsTo(Device)
 
 //Девайс - инфо о девайсе
-Device.hasMany(DeviceInfo);
+Device.hasMany(DeviceInfo, {as:"info"}); //В options.as указываем название поле, которе будет у массива харакеристик
 DeviceInfo.belongsTo(Device);
 
 //Тип - бренд
