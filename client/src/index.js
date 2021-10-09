@@ -11,7 +11,7 @@ export const Context = createContext(null); //Создаём контекст д
 ReactDOM.render(
     <Context.Provider value={{
         user: new UserStore(),
-        devices: new DeviceStore()
+        device: new DeviceStore()
     }}>
         <React.StrictMode>
             <App />
